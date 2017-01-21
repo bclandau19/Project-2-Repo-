@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4C2D0030002EA1AA8A7A6AAD674893D871211852",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4C2D0030002EA1AA8A7A6AAD674893D871211852" : 9223372036854775807,
+    "28A0E552ABC7F0E85CBC0AEB9A6207CD87466FF5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CADC57FA-2AC3-45B2-A831-2F53859DAD60",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4C2D0030002EA1AA8A7A6AAD674893D871211852" : "IOSI-NYC-1\/",
+    "28A0E552ABC7F0E85CBC0AEB9A6207CD87466FF5" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Project 2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Projects\/Project2\/Project 2\/Project 2\/Project 2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bclandau19\/Homework-Repository.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "28A0E552ABC7F0E85CBC0AEB9A6207CD87466FF5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bclandau19\/IOSI-NYC-1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C2D0030002EA1AA8A7A6AAD674893D871211852"
+    }
+  ]
+}
