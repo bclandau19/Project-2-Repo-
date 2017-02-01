@@ -16,17 +16,65 @@ class MainViewController: UIViewController {
 //let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ArticlesListViewController")
 //    
     
+    @IBOutlet weak var buttonLabel: UIButton!
+    @IBOutlet weak var foxButtonOutlet: UIButton!
+    @IBOutlet weak var ignButtonOutlet: UIButton!
+    @IBOutlet weak var cnnButtonOutlet: UIButton!
+    @IBOutlet weak var natGeoButtonOutlet: UIButton!
+    @IBOutlet weak var wsgButtonOutlet: UIButton!
     
-    
+    func didPinch(_ sender: UIPinchGestureRecognizer) {
+        print("did pinch \(sender.scale)")
+        sender.view!.transform = CGAffineTransform(scaleX: sender.scale, y: sender.scale)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(didPinch(_:)) )
+        buttonLabel.addGestureRecognizer(pinch)
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func didTap(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: view)
+        
+        buttonLabel.center = CGPoint(x: sender.view!.center.x + translation.x,
+                                     y: sender.view!.center.y + translation.y)
+//        foxButtonOutlet.center = CGPoint(x: sender.view!.center.x + translation.x,
+//                                          y: sender.view!.center.y + translation.y)
+//        ignButtonOutlet.center = CGPoint(x: sender.view!.center.x + translation.x,
+//                                         y: sender.view!.center.y + translation.y)
+//        cnnButtonOutlet.center = CGPoint(x: sender.view!.center.x + translation.x,
+//                                          y: sender.view!.center.y + translation.y)
+//        natGeoButtonOutlet.center = CGPoint(x: sender.view!.center.x + translation.x,
+//                                            y: sender.view!.center.y + translation.y)
+//        wsgButtonOutlet.center = CGPoint(x: sender.view!.center.x + translation.x,
+//                                         y: sender.view!.center.y + translation.y)
+        sender.setTranslation(CGPoint(x: 0, y: 0), in: view)
+    }
+    
+
+    
+    @IBAction func foxTapped(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: view)
+        foxButtonOutlet.center = CGPoint(x: sender.view!.center.x + translation.x,
+                                          y: sender.view!.center.y + translation.y)
+        sender.setTranslation(CGPoint(x: 0, y: 0), in: view)
+ 
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     

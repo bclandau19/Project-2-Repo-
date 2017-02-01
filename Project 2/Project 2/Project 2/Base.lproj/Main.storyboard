@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TCR-45-PKx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TCR-45-PKx">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,12 +23,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WzOm4o" translatesAutoresizingMaskIntoConstraints="NO" id="vwT-Td-eRo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHf-0p-Qdz">
                                 <rect key="frame" x="106" y="114" width="163" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <state key="normal" title="Button" image="Logo_fox_sports"/>
                                 <connections>
                                     <action selector="newsSource1:" destination="TCR-45-PKx" eventType="touchUpInside" id="NfJ-YX-WBi"/>
+                                    <outletCollection property="gestureRecognizers" destination="13x-TB-fxb" appends="YES" id="9SE-dT-jq6"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="seg2" id="52M-Lm-Sth"/>
                                 </connections>
                             </button>
@@ -41,14 +47,6 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="seg1" id="nlZ-CX-XqW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUr-xA-c1d">
-                                <rect key="frame" x="113" y="435" width="154" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="natgeo"/>
-                                <connections>
-                                    <action selector="natGeoBtn:" destination="TCR-45-PKx" eventType="touchUpInside" id="085-0l-AVO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwp-SH-JER">
                                 <rect key="frame" x="119" y="539" width="137" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,10 +55,10 @@
                                     <action selector="wsjButton:" destination="TCR-45-PKx" eventType="touchUpInside" id="Rc6-B4-kMe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVQ-Eb-0Ht">
-                                <rect key="frame" x="87" y="207" width="195" height="91"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVQ-Eb-0Ht">
+                                <rect key="frame" x="103" y="241" width="162" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="landscape_tech-ign-logo"/>
+                                <state key="normal" title="Button" image="ign-logo-mirror"/>
                                 <connections>
                                     <action selector="newsSource2:" destination="TCR-45-PKx" eventType="touchUpInside" id="cLo-jo-SXD"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="seg3" id="gDj-Ai-eTI"/>
@@ -69,9 +67,20 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-yk-yo4">
                                 <rect key="frame" x="108" y="28" width="159" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <state key="normal" title="Button" image="timelogo"/>
                                 <connections>
                                     <action selector="timeButton:" destination="TCR-45-PKx" eventType="touchUpInside" id="Ar0-b7-Lml"/>
+                                    <outletCollection property="gestureRecognizers" destination="P3y-ev-dig" appends="YES" id="HBo-uW-GU2"/>
+                                    <outletCollection property="gestureRecognizers" destination="X93-Yj-Tux" appends="YES" id="gbJ-an-oP6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUr-xA-c1d">
+                                <rect key="frame" x="116" y="441" width="143" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="National-Geographic-logo"/>
+                                <connections>
+                                    <action selector="natGeoBtn:" destination="TCR-45-PKx" eventType="touchUpInside" id="085-0l-AVO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,8 +88,27 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="buttonLabel" destination="Nva-yk-yo4" id="ETR-fr-xyj"/>
+                        <outlet property="cnnButtonOutlet" destination="SzC-a5-1v6" id="F0y-v6-Jpx"/>
+                        <outlet property="foxButtonOutlet" destination="YHf-0p-Qdz" id="We6-ZG-YdH"/>
+                        <outlet property="ignButtonOutlet" destination="eVQ-Eb-0Ht" id="5KE-6o-K5F"/>
+                        <outlet property="natGeoButtonOutlet" destination="hUr-xA-c1d" id="joW-zI-bnz"/>
+                        <outlet property="wsgButtonOutlet" destination="Jwp-SH-JER" id="Q1t-QZ-Yxv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSd-qY-bCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="P3y-ev-dig"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="X93-Yj-Tux">
+                    <connections>
+                        <action selector="didTap:" destination="TCR-45-PKx" id="321-4v-iCa"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="13x-TB-fxb">
+                    <connections>
+                        <action selector="foxTapped:" destination="TCR-45-PKx" id="H0U-X7-1L3"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-619.56521739130437" y="118.61413043478262"/>
         </scene>
@@ -108,7 +136,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pmz-e2-eg3" id="Ub1-Ok-qJs">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pns-Ak-L0V">
@@ -200,9 +228,10 @@
     <resources>
         <image name="Cnn.svg" width="2000" height="960"/>
         <image name="Logo_fox_sports" width="500" height="277"/>
+        <image name="National-Geographic-logo" width="1800" height="900"/>
+        <image name="WzOm4o" width="1191" height="670"/>
         <image name="coolbanner" width="600" height="337"/>
-        <image name="landscape_tech-ign-logo" width="640" height="320"/>
-        <image name="natgeo" width="300" height="168"/>
+        <image name="ign-logo-mirror" width="1907" height="571"/>
         <image name="timelogo" width="395" height="128"/>
         <image name="wsj" width="180" height="180"/>
     </resources>

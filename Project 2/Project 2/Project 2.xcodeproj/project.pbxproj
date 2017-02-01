@@ -108,7 +108,7 @@
 				TargetAttributes = {
 					D5358F001DFA7B4A00CF89FB = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 3HSLYWCPUX;
+						DevelopmentTeam = 75JV79HHRS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -275,10 +275,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3HSLYWCPUX;
+				DEVELOPMENT_TEAM = 75JV79HHRS;
 				INFOPLIST_FILE = "Project 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Richard-Landau";
+				PRODUCT_BUNDLE_IDENTIFIER = "Benjamin-Landau";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -288,10 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3HSLYWCPUX;
+				DEVELOPMENT_TEAM = 75JV79HHRS;
 				INFOPLIST_FILE = "Project 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Richard-Landau";
+				PRODUCT_BUNDLE_IDENTIFIER = "Benjamin-Landau";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

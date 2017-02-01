@@ -25,6 +25,7 @@ class ArticlesListViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        imageOutlet.image = image
         view.backgroundColor = UIColor.black
         Article.articles.removeAll()
@@ -61,7 +62,7 @@ class ArticlesListViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+        override func viewDidAppear(_ animated: Bool) {
         tableViewOutlet.reloadData()
     }
     
@@ -91,6 +92,8 @@ class ArticlesListViewController: UIViewController, UITableViewDelegate, UITable
         }
         task.resume()
     }
+    
+    
     
        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return Article.articles.count }
     
